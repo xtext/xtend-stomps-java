@@ -25,7 +25,7 @@ class WikipediaDownloader {
 						return
 					}
 					val articleUrl = new URL("https://en.wikipedia.org/wiki/" + subject)
-					val article = Resources.toString(articleUrl, Charsets.US_ASCII)
+					val article = Resources.toString(articleUrl, Charsets.UTF_8)
 					subscriber.onNext(article)
 				}
 				if (!subscriber.unsubscribed) {
