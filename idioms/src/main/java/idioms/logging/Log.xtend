@@ -1,10 +1,10 @@
 package idioms.logging
 
-import org.eclipse.xtend.lib.macro.Active
-import org.eclipse.xtend.lib.macro.AbstractClassProcessor
-import org.eclipse.xtend.lib.macro.declaration.MutableClassDeclaration
-import org.eclipse.xtend.lib.macro.TransformationContext
 import java.util.logging.Logger
+import org.eclipse.xtend.lib.macro.AbstractClassProcessor
+import org.eclipse.xtend.lib.macro.Active
+import org.eclipse.xtend.lib.macro.TransformationContext
+import org.eclipse.xtend.lib.macro.declaration.MutableClassDeclaration
 
 @Active(LogProcessor)
 annotation Log {
@@ -17,7 +17,7 @@ class LogProcessor extends AbstractClassProcessor {
 			static = true
 			final = true
 			type = Logger.newTypeReference
-			initializer = '''«Logger».getLogger("«cls.qualifiedName»")'''
+			initializer = '''Â«LoggerÂ».getLogger("Â«cls.qualifiedNameÂ»")'''
 		]
 	}
 
