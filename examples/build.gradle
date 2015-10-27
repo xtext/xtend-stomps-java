@@ -1,3 +1,4 @@
 dependencies {
   compile project(':idioms')
+  testCompile 'junit:junit:4.12'
 }
