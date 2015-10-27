@@ -33,5 +33,4 @@ class FxApp extends Application {
 		stage.scene = new Scene(root, 300, 200)
 		stage.show
 	}
-
 }

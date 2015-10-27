@@ -17,4 +17,6 @@ subprojects {
   dependencies {
       compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.8.4'
   }
+
+  sourceCompatibility = '1.8'
 }

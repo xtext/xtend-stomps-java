@@ -1,4 +1,6 @@
 dependencies {
   compile project(':idioms')
+  compile 'com.github.oehme.xtend:xtend-contrib:0.6.0'
+  compile 'io.reactivex:rxjava:1.0.10'
   testCompile 'junit:junit:4.12'
 }
