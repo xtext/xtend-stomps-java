@@ -1,11 +1,20 @@
-plugins {
-  id 'org.xtend.xtend' version '0.4.12'
-}
-
-repositories {
+buildscript {
+  repositories {
     jcenter()
+  }
+  dependencies {
+    classpath 'org.xtend:xtend-gradle-plugin:0.4.12'
+  }
 }
 
-dependencies {
-    compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.8.4'
+subprojects {
+  apply plugin: 'org.xtend.xtend'
+
+  repositories {
+      jcenter()
+  }
+
+  dependencies {
+      compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.8.4'
+  }
 }
