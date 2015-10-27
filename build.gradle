@@ -1,0 +1,11 @@
+plugins {
+  id 'org.xtend.xtend' version '0.4.12'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.8.4'
+}
