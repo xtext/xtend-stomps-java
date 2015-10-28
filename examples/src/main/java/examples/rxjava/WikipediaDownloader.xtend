@@ -17,8 +17,8 @@ class WikipediaDownloader {
 			]
 	}
 
-	def Observable<String> getWikipediaArticles(String... subjects) {
-		return Observable.create [ subscriber |
+	def getWikipediaArticles(String... subjects) {
+		return Observable.<String>create [ subscriber |
 			new Thread [
 				for (subject : subjects) {
 					if (subscriber.unsubscribed) {
