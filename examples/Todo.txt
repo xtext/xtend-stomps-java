@@ -3,8 +3,3 @@ Jan:
 - improve FX App
 - Code Generation, dispatch methods
 - Slides
-
-Stefan:
-
-- functional programming (lambdas, extension methods, type inference)
-- Android

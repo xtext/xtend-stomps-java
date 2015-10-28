@@ -4,19 +4,16 @@ buildscript {
   }
   dependencies {
     classpath 'org.xtend:xtend-gradle-plugin:0.4.12'
+    classpath 'com.android.tools.build:gradle:1.2.3'
+    classpath 'org.xtend:xtend-android-gradle-plugin:0.4.12'
   }
 }
 
 subprojects {
-  apply plugin: 'org.xtend.xtend'
-
   repositories {
       jcenter()
   }
-
-  dependencies {
-      compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.8.4'
+  plugins.withType(JavaPlugin) {
+    sourceCompatibility = '1.8'
   }
-
-  sourceCompatibility = '1.8'
 }

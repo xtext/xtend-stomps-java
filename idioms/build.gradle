@@ -1,3 +1,6 @@
+apply plugin: 'org.xtend.xtend'
+
 dependencies {
+	compile 'org.eclipse.xtend:org.eclipse.xtend.lib:2.8.4'
 	compile 'com.sparkjava:spark-core:2.3'
 }

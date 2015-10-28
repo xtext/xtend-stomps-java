@@ -1,2 +1,2 @@
 rootProject.name = 'xtend-stomps-java'
-include 'idioms', 'examples'
+include 'idioms', 'examples', 'wikipediaapp:wiki'

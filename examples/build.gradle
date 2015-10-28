@@ -1,3 +1,5 @@
+apply plugin: 'org.xtend.xtend'
+
 dependencies {
   compile project(':idioms')
   compile 'com.github.oehme.xtend:xtend-contrib:0.6.0'
