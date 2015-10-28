@@ -7,6 +7,10 @@ import org.eclipse.xtend.lib.annotations.Data
 	BigDecimal metersPerSecond
 
 	def static /(Distance d, Time t) {
+		speed(d, t)
+	}
+	
+	def static speed(Distance d, Time t) {
 		new Speed(d.meters / t.seconds)
 	}
 }

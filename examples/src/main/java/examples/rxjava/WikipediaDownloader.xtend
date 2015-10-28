@@ -24,9 +24,13 @@ class WikipediaDownloader {
 					if (subscriber.unsubscribed) {
 						return
 					}
-					val articleUrl = new URL("https://en.wikipedia.org/wiki/" + subject)
-					val article = Resources.toString(articleUrl, Charsets.UTF_8)
-					subscriber.onNext(article)
+					try {
+						val articleUrl = new URL("https://en.wikipedia.org/wiki/" + subject)
+						val article = Resources.toString(articleUrl, Charsets.UTF_8)
+						subscriber.onNext(article)
+					} catch (Exception e) {
+						subscriber.onError(e)
+					}
 				}
 				if (!subscriber.unsubscribed) {
 					subscriber.onCompleted

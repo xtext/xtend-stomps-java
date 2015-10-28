@@ -7,14 +7,22 @@ import org.eclipse.xtend.lib.annotations.Data
 	BigDecimal meters
 
 	def +(Distance other) {
+		plus(other)
+	}
+	
+	def plus(Distance other) {
 		new Distance(this.meters + other.meters)
 	}
 
 	def -(Distance other) {
 		new Distance(this.meters - other.meters)
 	}
-
+	
 	def *(int times) {
+		multiply(times)
+	}
+	
+	def multiply(int times) {
 		new Distance(this.meters * new BigDecimal(times))
 	}
 

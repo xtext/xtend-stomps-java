@@ -15,8 +15,8 @@ class FxApp extends Application {
 		launch(args)
 	}
 
-	override start(Stage stage) throws Exception {
-		val aspectRatio = stage.widthProperty / stage.heightProperty
+	override start(Stage it) throws Exception {
+		val aspectRatio = widthProperty / heightProperty
 		val root = new VBox => [
 			alignment = Pos.CENTER
 			children += new Button => [
@@ -29,8 +29,8 @@ class FxApp extends Application {
 				textProperty << aspectRatio.asString
 			]
 		]
-		stage.title = "Hello World!"
-		stage.scene = new Scene(root, 300, 200)
-		stage.show
+		title = "Hello World!"
+		scene = new Scene(root, 300, 200)
+		show
 	}
 }

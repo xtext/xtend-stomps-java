@@ -7,10 +7,19 @@ import org.eclipse.xtend.lib.annotations.Data
 	BigDecimal seconds
 
 	def +(Time other) {
+		plus(other)
+	}
+	
+	def plus(Time other) {
 		new Time(this.seconds + other.seconds)
+		
 	}
 
 	def -(Time other) {
+		minus(other)
+	}
+
+	def minus(Time other) {
 		new Time(this.seconds - other.seconds)
 	}
 
