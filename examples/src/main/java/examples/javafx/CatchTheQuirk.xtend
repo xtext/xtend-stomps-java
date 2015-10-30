@@ -1,4 +1,4 @@
-package idioms.javafx
+package examples.javafx
 
 import javafx.animation.Animation
 import javafx.animation.PathTransition
