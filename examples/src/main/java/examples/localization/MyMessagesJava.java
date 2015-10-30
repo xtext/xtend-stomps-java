@@ -6,7 +6,7 @@ import java.util.ResourceBundle;
 
 public class MyMessagesJava {
 	public static void main(final String[] args) {
-		MyMessages messages = new MyMessages(Locale.GERMAN);
+		MyMessagesJava messages = new MyMessagesJava(Locale.GERMAN);
 		System.out.println(messages.hello("World"));
 		System.out.println(messages.filesRead(Integer.valueOf(3)));
 	}

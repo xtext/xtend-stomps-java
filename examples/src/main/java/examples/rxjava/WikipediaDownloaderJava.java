@@ -20,7 +20,7 @@ public class WikipediaDownloaderJava {
 	}
 
 	public Observable<String> getWikipediaArticles(String... subjects) {
-		return Observable.<String>create(subscriber -> {
+		return Observable.create(subscriber -> {
 			new Thread(()-> {
 				for (String subject : subjects) {
 					if (subscriber.isUnsubscribed())
