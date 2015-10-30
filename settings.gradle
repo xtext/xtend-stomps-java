@@ -1,2 +1,5 @@
 rootProject.name = 'xtend-stomps-java'
-include 'idioms', 'examples', 'wiki'
+include 'idioms', 'examples'
+if (new File(settingsDir, 'local.properties').exists()) {
+  include 'wiki'
+}
